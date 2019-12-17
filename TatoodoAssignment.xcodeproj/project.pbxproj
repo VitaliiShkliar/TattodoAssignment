@@ -3,17 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */; };
+		63424D7923A8DE0100D112B5 /* TattooListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7823A8DE0100D112B5 /* TattooListViewController.swift */; };
+		63424D7B23A8DE9A00D112B5 /* TattoListControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */; };
+		63424D7F23A8E00C00D112B5 /* TattoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */; };
+		63424D8023A8E00C00D112B5 /* TattoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */; };
+		63424D8323A8E34C00D112B5 /* TattooListCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */; };
+		63424D8623A8E55200D112B5 /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8523A8E55200D112B5 /* PostsEndpoint.swift */; };
+		63424D8A23A8E79500D112B5 /* TattoosRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */; };
+		63424D8D23A8E87500D112B5 /* TattooListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8C23A8E87500D112B5 /* TattooListModel.swift */; };
+		63424D8F23A8E87E00D112B5 /* TattooDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8E23A8E87E00D112B5 /* TattooDetails.swift */; };
+		63424D9323A8E92300D112B5 /* TattooListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9223A8E92300D112B5 /* TattooListPage.swift */; };
+		63424D9623A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */; };
+		63424D9923A8ED6100D112B5 /* TattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9823A8ED6100D112B5 /* TattoosRepository.swift */; };
+		63424D9C23A8EDFB00D112B5 /* FakeTattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */; };
+		63424DA023A8EE1200D112B5 /* TTDTattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */; };
+		63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */; };
+		63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186023A8CF4900A4C027 /* Presentable.swift */; };
+		63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186123A8CF4900A4C027 /* Coordinator.swift */; };
+		63C0186823A8CF4900A4C027 /* WindowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186323A8CF4900A4C027 /* WindowRouter.swift */; };
+		63C0186923A8CF4900A4C027 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186423A8CF4900A4C027 /* Router.swift */; };
+		63C0186C23A8D02700A4C027 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186B23A8D02700A4C027 /* AppCoordinator.swift */; };
+		63C0188623A8D09300A4C027 /* RemoteAPIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186E23A8D09300A4C027 /* RemoteAPIResponseHandler.swift */; };
+		63C0188723A8D09300A4C027 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0187023A8D09300A4C027 /* ParameterEncoding.swift */; };
+		63C0188823A8D09300A4C027 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0187123A8D09300A4C027 /* URLParameterEncoder.swift */; };
+		63C0188923A8D09300A4C027 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0187223A8D09300A4C027 /* JSONParameterEncoder.swift */; };
+		63C0189123A8D09300A4C027 /* URLRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0187F23A8D09300A4C027 /* URLRequestError.swift */; };
+		63C0189223A8D09300A4C027 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0188123A8D09300A4C027 /* NetworkRouter.swift */; };
+		63C0189323A8D09300A4C027 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0188223A8D09300A4C027 /* HTTPTask.swift */; };
+		63C0189423A8D09300A4C027 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0188323A8D09300A4C027 /* APIRouter.swift */; };
+		63C0189523A8D09300A4C027 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0188423A8D09300A4C027 /* HTTPMethod.swift */; };
+		63C0189623A8D09300A4C027 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0188523A8D09300A4C027 /* EndPointType.swift */; };
+		63C0189A23A8D0CE00A4C027 /* OSLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0189823A8D0CE00A4C027 /* OSLogs.swift */; };
+		63C0189B23A8D0CE00A4C027 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0189923A8D0CE00A4C027 /* NetworkLogger.swift */; };
+		63C0189E23A8D11100A4C027 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0189D23A8D11100A4C027 /* AppDependencyContainer.swift */; };
+		63C018A123A8D22A00A4C027 /* Tattoo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C018A023A8D22A00A4C027 /* Tattoo.storyboard */; };
+		63C018A323A8D24100A4C027 /* TattooCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018A223A8D24100A4C027 /* TattooCoordinator.swift */; };
+		63C018A923A8D50000A4C027 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018A823A8D50000A4C027 /* DateHelper.swift */; };
+		63C018B023A8D54A00A4C027 /* Data+DecodeTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018AB23A8D54A00A4C027 /* Data+DecodeTo.swift */; };
+		63C018B123A8D54A00A4C027 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018AC23A8D54A00A4C027 /* Encodable+Dictionary.swift */; };
+		63C018B423A8D54A00A4C027 /* Optional+Required.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018AF23A8D54A00A4C027 /* Optional+Required.swift */; };
+		63C018BD23A8D56000A4C027 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */; };
+		63C018BE23A8D56000A4C027 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */; };
+		63C018C223A8D56000A4C027 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */; };
 		63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBEE923A8CBB2009956BF /* AppDelegate.swift */; };
-		63FDBEEC23A8CBB2009956BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBEEB23A8CBB2009956BF /* SceneDelegate.swift */; };
-		63FDBEEE23A8CBB2009956BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBEED23A8CBB2009956BF /* ViewController.swift */; };
-		63FDBEF123A8CBB2009956BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEEF23A8CBB2009956BF /* Main.storyboard */; };
 		63FDBEF323A8CBB4009956BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF223A8CBB4009956BF /* Assets.xcassets */; };
 		63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */; };
 		63FDBF0123A8CBB4009956BF /* TatoodoAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBF0023A8CBB4009956BF /* TatoodoAssignmentTests.swift */; };
+		666B943541905FB9264DA427 /* Pods_TatoodoAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A716194623313A59948CA50 /* Pods_TatoodoAssignment.framework */; };
+		A2DA21F5FE1DE28C24141CA3 /* Pods_TatoodoAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +69,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A716194623313A59948CA50 /* Pods_TatoodoAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TatoodoAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B18431C4C9E849BF1CC67AF /* Pods-TatoodoAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.debug.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.release.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TatoodoAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		63424D7823A8DE0100D112B5 /* TattooListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListViewController.swift; sourceTree = "<group>"; };
+		63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoListControllerViewModel.swift; sourceTree = "<group>"; };
+		63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoListTableViewCell.swift; sourceTree = "<group>"; };
+		63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TattoListTableViewCell.xib; sourceTree = "<group>"; };
+		63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListCellDisplayModel.swift; sourceTree = "<group>"; };
+		63424D8523A8E55200D112B5 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
+		63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoosRemoteAPI.swift; sourceTree = "<group>"; };
+		63424D8C23A8E87500D112B5 /* TattooListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListModel.swift; sourceTree = "<group>"; };
+		63424D8E23A8E87E00D112B5 /* TattooDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooDetails.swift; sourceTree = "<group>"; };
+		63424D9223A8E92300D112B5 /* TattooListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListPage.swift; sourceTree = "<group>"; };
+		63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDTattoosRemoteAPI.swift; sourceTree = "<group>"; };
+		63424D9823A8ED6100D112B5 /* TattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoosRepository.swift; sourceTree = "<group>"; };
+		63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTattoosRepository.swift; sourceTree = "<group>"; };
+		63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDTattoosRepository.swift; sourceTree = "<group>"; };
+		63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
+		63C0186023A8CF4900A4C027 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		63C0186123A8CF4900A4C027 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		63C0186323A8CF4900A4C027 /* WindowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRouter.swift; sourceTree = "<group>"; };
+		63C0186423A8CF4900A4C027 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		63C0186B23A8D02700A4C027 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		63C0186E23A8D09300A4C027 /* RemoteAPIResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPIResponseHandler.swift; sourceTree = "<group>"; };
+		63C0187023A8D09300A4C027 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		63C0187123A8D09300A4C027 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		63C0187223A8D09300A4C027 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		63C0187F23A8D09300A4C027 /* URLRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestError.swift; sourceTree = "<group>"; };
+		63C0188123A8D09300A4C027 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		63C0188223A8D09300A4C027 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		63C0188323A8D09300A4C027 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		63C0188423A8D09300A4C027 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		63C0188523A8D09300A4C027 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		63C0189823A8D0CE00A4C027 /* OSLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogs.swift; sourceTree = "<group>"; };
+		63C0189923A8D0CE00A4C027 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		63C0189D23A8D11100A4C027 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		63C018A023A8D22A00A4C027 /* Tattoo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tattoo.storyboard; sourceTree = "<group>"; };
+		63C018A223A8D24100A4C027 /* TattooCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooCoordinator.swift; sourceTree = "<group>"; };
+		63C018A823A8D50000A4C027 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		63C018AB23A8D54A00A4C027 /* Data+DecodeTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+DecodeTo.swift"; sourceTree = "<group>"; };
+		63C018AC23A8D54A00A4C027 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		63C018AF23A8D54A00A4C027 /* Optional+Required.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Required.swift"; sourceTree = "<group>"; };
+		63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		63FDBEE623A8CBB2009956BF /* TatoodoAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TatoodoAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDBEE923A8CBB2009956BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63FDBEEB23A8CBB2009956BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63FDBEED23A8CBB2009956BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63FDBEF023A8CBB2009956BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63FDBEF223A8CBB4009956BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FDBEF523A8CBB4009956BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FDBEF723A8CBB4009956BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FDBEFC23A8CBB4009956BF /* TatoodoAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TatoodoAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDBF0023A8CBB4009956BF /* TatoodoAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TatoodoAssignmentTests.swift; sourceTree = "<group>"; };
 		63FDBF0223A8CBB4009956BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B13E6F1B8E91B8321E8C29A /* Pods-TatoodoAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignmentTests/Pods-TatoodoAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		B684AF843F7D69546667C84F /* Pods-TatoodoAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignmentTests/Pods-TatoodoAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666B943541905FB9264DA427 /* Pods_TatoodoAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +141,281 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA21F5FE1DE28C24141CA3 /* Pods_TatoodoAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63424D7C23A8DFDE00D112B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */,
+				63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63424D8123A8E33400D112B5 /* DisplayModels */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */,
+			);
+			path = DisplayModels;
+			sourceTree = "<group>";
+		};
+		63424D8423A8E53000D112B5 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8523A8E55200D112B5 /* PostsEndpoint.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		63424D8723A8E77000D112B5 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8823A8E78200D112B5 /* Tattoos */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		63424D8823A8E78200D112B5 /* Tattoos */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */,
+				63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */,
+			);
+			path = Tattoos;
+			sourceTree = "<group>";
+		};
+		63424D9723A8ED4A00D112B5 /* TattoosRepository */ = {
+			isa = PBXGroup;
+			children = (
+				63424D9823A8ED6100D112B5 /* TattoosRepository.swift */,
+				63424D9A23A8EDE800D112B5 /* Implementations */,
+			);
+			path = TattoosRepository;
+			sourceTree = "<group>";
+		};
+		63424D9A23A8EDE800D112B5 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */,
+				63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		63C0185523A8CE4800A4C027 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				63C0189D23A8D11100A4C027 /* AppDependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		63C0185623A8CE4D00A4C027 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				63C018A623A8D25200A4C027 /* Tatoo */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		63C0185723A8CE5200A4C027 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				63424D9723A8ED4A00D112B5 /* TattoosRepository */,
+				63424D8723A8E77000D112B5 /* Remote */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		63C0185823A8CE5A00A4C027 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63C0189723A8D0CE00A4C027 /* Logging */,
+				63C0186D23A8D09300A4C027 /* Networking */,
+				63C0185C23A8CEFC00A4C027 /* Coordinator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63C0185923A8CE9100A4C027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */,
+				63FDBEF223A8CBB4009956BF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63C0185A23A8CEAD00A4C027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8C23A8E87500D112B5 /* TattooListModel.swift */,
+				63424D8E23A8E87E00D112B5 /* TattooDetails.swift */,
+				63424D9223A8E92300D112B5 /* TattooListPage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63C0185B23A8CEE300A4C027 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				63FDBEF723A8CBB4009956BF /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		63C0185C23A8CEFC00A4C027 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				63C0186123A8CF4900A4C027 /* Coordinator.swift */,
+				63C0186023A8CF4900A4C027 /* Presentable.swift */,
+				63C0186223A8CF4900A4C027 /* Router */,
+				63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		63C0186223A8CF4900A4C027 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				63C0186323A8CF4900A4C027 /* WindowRouter.swift */,
+				63C0186423A8CF4900A4C027 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		63C0186D23A8D09300A4C027 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				63C0186E23A8D09300A4C027 /* RemoteAPIResponseHandler.swift */,
+				63C0186F23A8D09300A4C027 /* Encoding */,
+				63C0187323A8D09300A4C027 /* EndPoint */,
+				63C0187F23A8D09300A4C027 /* URLRequestError.swift */,
+				63C0188023A8D09300A4C027 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		63C0186F23A8D09300A4C027 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				63C0187023A8D09300A4C027 /* ParameterEncoding.swift */,
+				63C0187123A8D09300A4C027 /* URLParameterEncoder.swift */,
+				63C0187223A8D09300A4C027 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		63C0187323A8D09300A4C027 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				63424D8423A8E53000D112B5 /* Posts */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		63C0188023A8D09300A4C027 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				63C0188123A8D09300A4C027 /* NetworkRouter.swift */,
+				63C0188223A8D09300A4C027 /* HTTPTask.swift */,
+				63C0188323A8D09300A4C027 /* APIRouter.swift */,
+				63C0188423A8D09300A4C027 /* HTTPMethod.swift */,
+				63C0188523A8D09300A4C027 /* EndPointType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		63C0189723A8D0CE00A4C027 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				63C0189823A8D0CE00A4C027 /* OSLogs.swift */,
+				63C0189923A8D0CE00A4C027 /* NetworkLogger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		63C018A423A8D24400A4C027 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63424D7823A8DE0100D112B5 /* TattooListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63C018A523A8D24900A4C027 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		63C018A623A8D25200A4C027 /* Tatoo */ = {
+			isa = PBXGroup;
+			children = (
+				63C018A023A8D22A00A4C027 /* Tattoo.storyboard */,
+				63C018A223A8D24100A4C027 /* TattooCoordinator.swift */,
+				63C018A523A8D24900A4C027 /* ViewModels */,
+				63C018A423A8D24400A4C027 /* ViewControllers */,
+				63424D7C23A8DFDE00D112B5 /* Views */,
+				63424D8123A8E33400D112B5 /* DisplayModels */,
+			);
+			path = Tatoo;
+			sourceTree = "<group>";
+		};
+		63C018A723A8D4E800A4C027 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				63C018A823A8D50000A4C027 /* DateHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		63C018AA23A8D54A00A4C027 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				63C018AB23A8D54A00A4C027 /* Data+DecodeTo.swift */,
+				63C018AC23A8D54A00A4C027 /* Encodable+Dictionary.swift */,
+				63C018AF23A8D54A00A4C027 /* Optional+Required.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		63C018B523A8D54E00A4C027 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63C018B623A8D56000A4C027 /* UIKit */,
+				63C018AA23A8D54A00A4C027 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63C018B623A8D56000A4C027 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */,
+				63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */,
+				63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */,
+				63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		63FDBEDD23A8CBB2009956BF = {
 			isa = PBXGroup;
 			children = (
 				63FDBEE823A8CBB2009956BF /* TatoodoAssignment */,
 				63FDBEFF23A8CBB4009956BF /* TatoodoAssignmentTests */,
 				63FDBEE723A8CBB2009956BF /* Products */,
+				86CF4017D68332EF48BA9A38 /* Pods */,
+				8A0B5315562E2F846FD56E34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +432,16 @@
 			isa = PBXGroup;
 			children = (
 				63FDBEE923A8CBB2009956BF /* AppDelegate.swift */,
-				63FDBEEB23A8CBB2009956BF /* SceneDelegate.swift */,
-				63FDBEED23A8CBB2009956BF /* ViewController.swift */,
-				63FDBEEF23A8CBB2009956BF /* Main.storyboard */,
-				63FDBEF223A8CBB4009956BF /* Assets.xcassets */,
-				63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */,
-				63FDBEF723A8CBB4009956BF /* Info.plist */,
+				63C0186B23A8D02700A4C027 /* AppCoordinator.swift */,
+				63C0185523A8CE4800A4C027 /* DI */,
+				63C0185623A8CE4D00A4C027 /* Scenes */,
+				63C0185723A8CE5200A4C027 /* Repositories */,
+				63C0185A23A8CEAD00A4C027 /* Models */,
+				63C0185823A8CE5A00A4C027 /* Services */,
+				63C018A723A8D4E800A4C027 /* Utils */,
+				63C018B523A8D54E00A4C027 /* Extensions */,
+				63C0185B23A8CEE300A4C027 /* Configuration */,
+				63C0185923A8CE9100A4C027 /* Resources */,
 			);
 			path = TatoodoAssignment;
 			sourceTree = "<group>";
@@ -99,6 +455,26 @@
 			path = TatoodoAssignmentTests;
 			sourceTree = "<group>";
 		};
+		86CF4017D68332EF48BA9A38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B18431C4C9E849BF1CC67AF /* Pods-TatoodoAssignment.debug.xcconfig */,
+				469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */,
+				B684AF843F7D69546667C84F /* Pods-TatoodoAssignmentTests.debug.xcconfig */,
+				7B13E6F1B8E91B8321E8C29A /* Pods-TatoodoAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A0B5315562E2F846FD56E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A716194623313A59948CA50 /* Pods_TatoodoAssignment.framework */,
+				5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +482,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63FDBF0523A8CBB4009956BF /* Build configuration list for PBXNativeTarget "TatoodoAssignment" */;
 			buildPhases = (
+				9C5F4C909F42AA9B01F50430 /* [CP] Check Pods Manifest.lock */,
 				63FDBEE223A8CBB2009956BF /* Sources */,
 				63FDBEE323A8CBB2009956BF /* Frameworks */,
 				63FDBEE423A8CBB2009956BF /* Resources */,
+				63C0189F23A8D14100A4C027 /* ShellScript */,
+				579BA6585769D9B15F3C7A3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +502,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63FDBF0823A8CBB4009956BF /* Build configuration list for PBXNativeTarget "TatoodoAssignmentTests" */;
 			buildPhases = (
+				A23D10999978C9E73E299701 /* [CP] Check Pods Manifest.lock */,
 				63FDBEF823A8CBB4009956BF /* Sources */,
 				63FDBEF923A8CBB4009956BF /* Frameworks */,
 				63FDBEFA23A8CBB4009956BF /* Resources */,
@@ -180,9 +560,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C018A123A8D22A00A4C027 /* Tattoo.storyboard in Resources */,
 				63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */,
+				63424D8023A8E00C00D112B5 /* TattoListTableViewCell.xib in Resources */,
 				63FDBEF323A8CBB4009956BF /* Assets.xcassets in Resources */,
-				63FDBEF123A8CBB2009956BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +576,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		579BA6585769D9B15F3C7A3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C0189F23A8D14100A4C027 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		9C5F4C909F42AA9B01F50430 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TatoodoAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23D10999978C9E73E299701 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TatoodoAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63FDBEE223A8CBB2009956BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FDBEEE23A8CBB2009956BF /* ViewController.swift in Sources */,
+				63424D7B23A8DE9A00D112B5 /* TattoListControllerViewModel.swift in Sources */,
+				63C018BD23A8D56000A4C027 /* StoryboardIdentifiable.swift in Sources */,
+				63424D8623A8E55200D112B5 /* PostsEndpoint.swift in Sources */,
+				63424D7F23A8E00C00D112B5 /* TattoListTableViewCell.swift in Sources */,
+				63424D8D23A8E87500D112B5 /* TattooListModel.swift in Sources */,
+				63C0189323A8D09300A4C027 /* HTTPTask.swift in Sources */,
+				63C0188723A8D09300A4C027 /* ParameterEncoding.swift in Sources */,
+				63C0189123A8D09300A4C027 /* URLRequestError.swift in Sources */,
+				63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */,
+				63C018B423A8D54A00A4C027 /* Optional+Required.swift in Sources */,
+				63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */,
+				63C0189423A8D09300A4C027 /* APIRouter.swift in Sources */,
+				63C0189E23A8D11100A4C027 /* AppDependencyContainer.swift in Sources */,
+				63C0189623A8D09300A4C027 /* EndPointType.swift in Sources */,
+				63C0186823A8CF4900A4C027 /* WindowRouter.swift in Sources */,
+				63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */,
+				63424D9923A8ED6100D112B5 /* TattoosRepository.swift in Sources */,
+				63C018A923A8D50000A4C027 /* DateHelper.swift in Sources */,
+				63C0189A23A8D0CE00A4C027 /* OSLogs.swift in Sources */,
+				63424DA023A8EE1200D112B5 /* TTDTattoosRepository.swift in Sources */,
+				63424D9623A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift in Sources */,
+				63C018B023A8D54A00A4C027 /* Data+DecodeTo.swift in Sources */,
+				63C018C223A8D56000A4C027 /* ReuseIdentifying.swift in Sources */,
+				63C0189B23A8D0CE00A4C027 /* NetworkLogger.swift in Sources */,
+				63C018B123A8D54A00A4C027 /* Encodable+Dictionary.swift in Sources */,
+				63C0188923A8D09300A4C027 /* JSONParameterEncoder.swift in Sources */,
+				63424D8F23A8E87E00D112B5 /* TattooDetails.swift in Sources */,
 				63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */,
-				63FDBEEC23A8CBB2009956BF /* SceneDelegate.swift in Sources */,
+				63C0188623A8D09300A4C027 /* RemoteAPIResponseHandler.swift in Sources */,
+				63424D8323A8E34C00D112B5 /* TattooListCellDisplayModel.swift in Sources */,
+				63C0186923A8CF4900A4C027 /* Router.swift in Sources */,
+				63424D7923A8DE0100D112B5 /* TattooListViewController.swift in Sources */,
+				63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */,
+				63C0188823A8D09300A4C027 /* URLParameterEncoder.swift in Sources */,
+				63C0186C23A8D02700A4C027 /* AppCoordinator.swift in Sources */,
+				63C0189223A8D09300A4C027 /* NetworkRouter.swift in Sources */,
+				63C0189523A8D09300A4C027 /* HTTPMethod.swift in Sources */,
+				63424D8A23A8E79500D112B5 /* TattoosRemoteAPI.swift in Sources */,
+				63424D9323A8E92300D112B5 /* TattooListPage.swift in Sources */,
+				63424D9C23A8EDFB00D112B5 /* FakeTattoosRepository.swift in Sources */,
+				63C018BE23A8D56000A4C027 /* UIScrollView+Extensions.swift in Sources */,
+				63C018A323A8D24100A4C027 /* TattooCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +726,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63FDBEEF23A8CBB2009956BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63FDBEF023A8CBB2009956BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,42 +853,47 @@
 		};
 		63FDBF0623A8CBB4009956BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B18431C4C9E849BF1CC67AF /* Pods-TatoodoAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU9B24YLDN;
-				INFOPLIST_FILE = TatoodoAssignment/Info.plist;
+				INFOPLIST_FILE = TatoodoAssignment/Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.RXMVVMC.TatoodoAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.TatoodoAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		63FDBF0723A8CBB4009956BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU9B24YLDN;
-				INFOPLIST_FILE = TatoodoAssignment/Info.plist;
+				INFOPLIST_FILE = TatoodoAssignment/Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.RXMVVMC.TatoodoAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.TatoodoAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		63FDBF0923A8CBB4009956BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B684AF843F7D69546667C84F /* Pods-TatoodoAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +916,7 @@
 		};
 		63FDBF0A23A8CBB4009956BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B13E6F1B8E91B8321E8C29A /* Pods-TatoodoAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

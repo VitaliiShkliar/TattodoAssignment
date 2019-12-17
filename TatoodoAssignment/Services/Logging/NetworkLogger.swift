@@ -28,6 +28,10 @@ struct NetworkLogger {
         }
     }
     
+    static func log(error: Error) {
+        os_log("Error: %{PRIVATE}@", log: .network, type: .error, error.localizedDescription)
+    }
+    
     static private func log(responseData data: Data) {
         do {
             guard let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else { return }

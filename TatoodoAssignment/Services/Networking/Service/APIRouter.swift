@@ -38,6 +38,7 @@ class APIRouter<EndPoint: EndPointType>: NetworkRouter {
             NetworkLogger.log(request: request)
             let task = session.dataTask(with: request, completionHandler: { data, response, error in
                 if let error = error {
+                    NetworkLogger.log(error: error)
                     completion(.failure(error))
                     return
                 }
@@ -56,14 +57,17 @@ class APIRouter<EndPoint: EndPointType>: NetworkRouter {
                         let model = try data.decodeTo(type: T.self)
                         completion(.success(model))
                     } catch {
+                        NetworkLogger.log(error: error)
                         completion(.failure(error))
                     }
                 case .failure(let error):
+                    NetworkLogger.log(error: error)
                     completion(.failure(error))
                 }
             })
             self.task = task
         } catch {
+            NetworkLogger.log(error: error)
             completion(.failure(error))
         }
         self.task?.resume()

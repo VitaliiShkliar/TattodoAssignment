@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostListTableViewCell" rowHeight="300" id="KGk-i7-Jjw" customClass="PostListTableViewCell" customModule="TatoodoAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVT-5W-Wtq">
+                        <rect key="frame" x="8" y="8" width="304" height="284"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3i7-G3-itW">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="284"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-4u-gn5">
+                                <rect key="frame" x="16" y="259" width="272" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3i7-G3-itW" firstAttribute="leading" secondItem="uVT-5W-Wtq" secondAttribute="leading" id="DGM-9Y-Fdw"/>
+                            <constraint firstAttribute="trailing" secondItem="3i7-G3-itW" secondAttribute="trailing" id="DOA-AE-y5i"/>
+                            <constraint firstAttribute="bottom" secondItem="Trj-4u-gn5" secondAttribute="bottom" constant="8" id="Pab-Tk-aIT"/>
+                            <constraint firstAttribute="trailing" secondItem="Trj-4u-gn5" secondAttribute="trailing" constant="16" id="Xv1-Gk-Ida"/>
+                            <constraint firstItem="Trj-4u-gn5" firstAttribute="leading" secondItem="uVT-5W-Wtq" secondAttribute="leading" constant="16" id="fdp-fF-LzJ"/>
+                            <constraint firstItem="3i7-G3-itW" firstAttribute="top" secondItem="uVT-5W-Wtq" secondAttribute="top" id="xaV-Oj-Dqg"/>
+                            <constraint firstAttribute="bottom" secondItem="3i7-G3-itW" secondAttribute="bottom" id="yms-SN-PFv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uVT-5W-Wtq" secondAttribute="trailing" constant="8" id="8SP-NG-EXg"/>
+                    <constraint firstItem="uVT-5W-Wtq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Vib-Xu-MMq"/>
+                    <constraint firstAttribute="bottom" secondItem="uVT-5W-Wtq" secondAttribute="bottom" constant="8" id="XzJ-gO-sdw"/>
+                    <constraint firstItem="uVT-5W-Wtq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rS3-gZ-mv5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="uVT-5W-Wtq" id="8hd-nz-qkh"/>
+                <outlet property="postDescription" destination="Trj-4u-gn5" id="wud-HM-LET"/>
+                <outlet property="postImageView" destination="3i7-G3-itW" id="Eto-cj-cnN"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="220.3125"/>
+        </tableViewCell>
+    </objects>
+</document>

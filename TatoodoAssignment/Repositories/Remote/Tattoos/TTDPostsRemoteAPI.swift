@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TTDTattoosRemoteAPI: TattoosRemoteAPI {
+struct TTDPostsRemoteAPI: PostsRemoteAPI {
     private let router: APIRouter<PostsEndpoint>
     private let responseHandler: RemoteAPIResponseHandler
     
@@ -18,13 +18,15 @@ struct TTDTattoosRemoteAPI: TattoosRemoteAPI {
         router = tattooRouter
     }
     
-    func getTattoosList(page: Int, completion: @escaping (Result<TattooListPage, Error>) -> Void) {
+    func getPostsList(page: Int, completion: @escaping (Result<PostsListPage, Error>) -> Void) {
         router.request(.search(page: page),
                        responseHandler: responseHandler,
                        completion: completion)
     }
     
-    func getDetailsForTattoo(with id: Int, completion: @escaping (Result<TattooDetails, Error>) -> Void) {
-        router.request(.getPostDetails(postID: id), responseHandler: responseHandler, completion: completion)
+    func getDetailsForPost(with id: Int, completion: @escaping (Result<PostDetails, Error>) -> Void) {
+        router.request(.getPostDetails(postID: id),
+                       responseHandler: responseHandler,
+                       completion: completion)
     }
 }

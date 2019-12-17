@@ -13,8 +13,32 @@ class AppDependencyContainer {
     
     private lazy var appDIContainer: Container = {
         Container { container in
+
+            container.register(PostsRemoteAPI.self) { _ -> PostsRemoteAPI in
+                TTDPostsRemoteAPI(tattooRouter: APIRouter<PostsEndpoint>(),
+                                  responseHandler: DefaultAPIResponseHandler())
+            }
+            
+            container.register(PostsRepository.self) { resolver -> PostsRepository in
+                TTDPostsRepository(tattoosRemoteAPI: resolver.resolve(PostsRemoteAPI.self).required())
+            }.inObjectScope(.weak)
+            
+            container.register(PostsListControllerViewModeling.self) { resolver -> PostsListControllerViewModeling in
+                PostsListControllerViewModel(dataProvider: PostsDataProvider(repository: resolver.resolve(PostsRepository.self).required()))
+            }
+            
+            container.register(PostsListViewController.self) { resolver -> PostsListViewController in
+                let vc: PostsListViewController = UIStoryboard(.tattoo).instantiateViewController()
+                vc.navigationItem.title = "Posts"
+                vc.viewModel = resolver.resolve(PostsListControllerViewModeling.self).required()
+                return vc
+            }
+            
             container.register(TattooCoordinator.self) { (resolver, router: RouterType) -> TattooCoordinator in
-                TattooCoordinator(router: router)
+                let postListVCFactory: () -> PostsListViewController = {
+                    resolver.resolve(PostsListViewController.self).required()
+                }
+                return TattooCoordinator(router: router, postsListVCFactory: postListVCFactory)
             }.inObjectScope(.weak)
             
             container.register(AppCoordinator.self) { resolver -> AppCoordinator in

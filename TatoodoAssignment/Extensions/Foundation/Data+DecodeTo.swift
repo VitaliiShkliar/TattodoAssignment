@@ -10,9 +10,11 @@ import Foundation
 
 extension Data {
     func decodeTo<T: Decodable>(type: T.Type,
-                                strategy: JSONDecoder.KeyDecodingStrategy = .convertFromSnakeCase) throws -> T {
+                                strategy: JSONDecoder.KeyDecodingStrategy = .convertFromSnakeCase,
+                                 dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .formatted(DateFormatter.defaultFormat)) throws -> T {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = strategy
+        decoder.dateDecodingStrategy = dateDecodingStrategy
         return try decoder.decode(type, from: self)
     }
 }

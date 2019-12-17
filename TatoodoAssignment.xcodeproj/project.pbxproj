@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */; };
-		63424D7923A8DE0100D112B5 /* TattooListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7823A8DE0100D112B5 /* TattooListViewController.swift */; };
-		63424D7B23A8DE9A00D112B5 /* TattoListControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */; };
-		63424D7F23A8E00C00D112B5 /* TattoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */; };
-		63424D8023A8E00C00D112B5 /* TattoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */; };
-		63424D8323A8E34C00D112B5 /* TattooListCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */; };
+		63424D7923A8DE0100D112B5 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7823A8DE0100D112B5 /* PostsListViewController.swift */; };
+		63424D7F23A8E00C00D112B5 /* PostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */; };
+		63424D8023A8E00C00D112B5 /* PostListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63424D7E23A8E00C00D112B5 /* PostListTableViewCell.xib */; };
+		63424D8323A8E34C00D112B5 /* PostListCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8223A8E34C00D112B5 /* PostListCellDisplayModel.swift */; };
 		63424D8623A8E55200D112B5 /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8523A8E55200D112B5 /* PostsEndpoint.swift */; };
-		63424D8A23A8E79500D112B5 /* TattoosRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */; };
-		63424D8D23A8E87500D112B5 /* TattooListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8C23A8E87500D112B5 /* TattooListModel.swift */; };
-		63424D8F23A8E87E00D112B5 /* TattooDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8E23A8E87E00D112B5 /* TattooDetails.swift */; };
-		63424D9323A8E92300D112B5 /* TattooListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9223A8E92300D112B5 /* TattooListPage.swift */; };
-		63424D9623A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */; };
-		63424D9923A8ED6100D112B5 /* TattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9823A8ED6100D112B5 /* TattoosRepository.swift */; };
-		63424D9C23A8EDFB00D112B5 /* FakeTattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */; };
-		63424DA023A8EE1200D112B5 /* TTDTattoosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */; };
+		63424D8A23A8E79500D112B5 /* PostsRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8923A8E79500D112B5 /* PostsRemoteAPI.swift */; };
+		63424D8D23A8E87500D112B5 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8C23A8E87500D112B5 /* PostListModel.swift */; };
+		63424D8F23A8E87E00D112B5 /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D8E23A8E87E00D112B5 /* PostDetails.swift */; };
+		63424D9323A8E92300D112B5 /* PostsListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9223A8E92300D112B5 /* PostsListPage.swift */; };
+		63424D9923A8ED6100D112B5 /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D9823A8ED6100D112B5 /* PostsRepository.swift */; };
+		63424DA423A906DE00D112B5 /* FakePostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DA323A906DE00D112B5 /* FakePostsRepository.swift */; };
+		63424DA823A9070800D112B5 /* TTDPostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DA723A9070800D112B5 /* TTDPostsRepository.swift */; };
+		63424DAC23A907EA00D112B5 /* TTDPostsRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DAB23A907EA00D112B5 /* TTDPostsRemoteAPI.swift */; };
+		63424DAF23A9084D00D112B5 /* PaginationSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DAE23A9084D00D112B5 /* PaginationSupportable.swift */; };
+		63424DB323A90D9400D112B5 /* PostsListControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */; };
+		63424DB523A91E7200D112B5 /* DefaultAPIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB423A91E7200D112B5 /* DefaultAPIResponseHandler.swift */; };
+		63424DB723A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB623A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift */; };
 		63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */; };
 		63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186023A8CF4900A4C027 /* Presentable.swift */; };
 		63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186123A8CF4900A4C027 /* Coordinator.swift */; };
@@ -74,20 +77,23 @@
 		469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.release.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TatoodoAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
-		63424D7823A8DE0100D112B5 /* TattooListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListViewController.swift; sourceTree = "<group>"; };
-		63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoListControllerViewModel.swift; sourceTree = "<group>"; };
-		63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoListTableViewCell.swift; sourceTree = "<group>"; };
-		63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TattoListTableViewCell.xib; sourceTree = "<group>"; };
-		63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListCellDisplayModel.swift; sourceTree = "<group>"; };
+		63424D7823A8DE0100D112B5 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewCell.swift; sourceTree = "<group>"; };
+		63424D7E23A8E00C00D112B5 /* PostListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListTableViewCell.xib; sourceTree = "<group>"; };
+		63424D8223A8E34C00D112B5 /* PostListCellDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCellDisplayModel.swift; sourceTree = "<group>"; };
 		63424D8523A8E55200D112B5 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
-		63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoosRemoteAPI.swift; sourceTree = "<group>"; };
-		63424D8C23A8E87500D112B5 /* TattooListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListModel.swift; sourceTree = "<group>"; };
-		63424D8E23A8E87E00D112B5 /* TattooDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooDetails.swift; sourceTree = "<group>"; };
-		63424D9223A8E92300D112B5 /* TattooListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooListPage.swift; sourceTree = "<group>"; };
-		63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDTattoosRemoteAPI.swift; sourceTree = "<group>"; };
-		63424D9823A8ED6100D112B5 /* TattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoosRepository.swift; sourceTree = "<group>"; };
-		63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTattoosRepository.swift; sourceTree = "<group>"; };
-		63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDTattoosRepository.swift; sourceTree = "<group>"; };
+		63424D8923A8E79500D112B5 /* PostsRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRemoteAPI.swift; sourceTree = "<group>"; };
+		63424D8C23A8E87500D112B5 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		63424D8E23A8E87E00D112B5 /* PostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
+		63424D9223A8E92300D112B5 /* PostsListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListPage.swift; sourceTree = "<group>"; };
+		63424D9823A8ED6100D112B5 /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		63424DA323A906DE00D112B5 /* FakePostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePostsRepository.swift; sourceTree = "<group>"; };
+		63424DA723A9070800D112B5 /* TTDPostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDPostsRepository.swift; sourceTree = "<group>"; };
+		63424DAB23A907EA00D112B5 /* TTDPostsRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDPostsRemoteAPI.swift; sourceTree = "<group>"; };
+		63424DAE23A9084D00D112B5 /* PaginationSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationSupportable.swift; sourceTree = "<group>"; };
+		63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListControllerViewModel.swift; sourceTree = "<group>"; };
+		63424DB423A91E7200D112B5 /* DefaultAPIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIResponseHandler.swift; sourceTree = "<group>"; };
+		63424DB623A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+DefaultFormatter.swift"; sourceTree = "<group>"; };
 		63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
 		63C0186023A8CF4900A4C027 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		63C0186123A8CF4900A4C027 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -151,8 +157,8 @@
 		63424D7C23A8DFDE00D112B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63424D7D23A8E00C00D112B5 /* TattoListTableViewCell.swift */,
-				63424D7E23A8E00C00D112B5 /* TattoListTableViewCell.xib */,
+				63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */,
+				63424D7E23A8E00C00D112B5 /* PostListTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +166,7 @@
 		63424D8123A8E33400D112B5 /* DisplayModels */ = {
 			isa = PBXGroup;
 			children = (
-				63424D8223A8E34C00D112B5 /* TattooListCellDisplayModel.swift */,
+				63424D8223A8E34C00D112B5 /* PostListCellDisplayModel.swift */,
 			);
 			path = DisplayModels;
 			sourceTree = "<group>";
@@ -184,8 +190,8 @@
 		63424D8823A8E78200D112B5 /* Tattoos */ = {
 			isa = PBXGroup;
 			children = (
-				63424D8923A8E79500D112B5 /* TattoosRemoteAPI.swift */,
-				63424D9523A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift */,
+				63424D8923A8E79500D112B5 /* PostsRemoteAPI.swift */,
+				63424DAB23A907EA00D112B5 /* TTDPostsRemoteAPI.swift */,
 			);
 			path = Tattoos;
 			sourceTree = "<group>";
@@ -193,7 +199,7 @@
 		63424D9723A8ED4A00D112B5 /* TattoosRepository */ = {
 			isa = PBXGroup;
 			children = (
-				63424D9823A8ED6100D112B5 /* TattoosRepository.swift */,
+				63424D9823A8ED6100D112B5 /* PostsRepository.swift */,
 				63424D9A23A8EDE800D112B5 /* Implementations */,
 			);
 			path = TattoosRepository;
@@ -202,10 +208,18 @@
 		63424D9A23A8EDE800D112B5 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				63424D9B23A8EDFB00D112B5 /* FakeTattoosRepository.swift */,
-				63424D9F23A8EE1200D112B5 /* TTDTattoosRepository.swift */,
+				63424DA323A906DE00D112B5 /* FakePostsRepository.swift */,
+				63424DA723A9070800D112B5 /* TTDPostsRepository.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		63424DAD23A9084100D112B5 /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+				63424DAE23A9084D00D112B5 /* PaginationSupportable.swift */,
+			);
+			path = Pagination;
 			sourceTree = "<group>";
 		};
 		63C0185523A8CE4800A4C027 /* DI */ = {
@@ -255,9 +269,9 @@
 		63C0185A23A8CEAD00A4C027 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				63424D8C23A8E87500D112B5 /* TattooListModel.swift */,
-				63424D8E23A8E87E00D112B5 /* TattooDetails.swift */,
-				63424D9223A8E92300D112B5 /* TattooListPage.swift */,
+				63424D8C23A8E87500D112B5 /* PostListModel.swift */,
+				63424D8E23A8E87E00D112B5 /* PostDetails.swift */,
+				63424D9223A8E92300D112B5 /* PostsListPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,10 +308,11 @@
 			isa = PBXGroup;
 			children = (
 				63C0186E23A8D09300A4C027 /* RemoteAPIResponseHandler.swift */,
+				63C0187F23A8D09300A4C027 /* URLRequestError.swift */,
 				63C0186F23A8D09300A4C027 /* Encoding */,
 				63C0187323A8D09300A4C027 /* EndPoint */,
-				63C0187F23A8D09300A4C027 /* URLRequestError.swift */,
 				63C0188023A8D09300A4C027 /* Service */,
+				63424DB423A91E7200D112B5 /* DefaultAPIResponseHandler.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -344,7 +359,7 @@
 		63C018A423A8D24400A4C027 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				63424D7823A8DE0100D112B5 /* TattooListViewController.swift */,
+				63424D7823A8DE0100D112B5 /* PostsListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -352,7 +367,7 @@
 		63C018A523A8D24900A4C027 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				63424D7A23A8DE9A00D112B5 /* TattoListControllerViewModel.swift */,
+				63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -373,6 +388,7 @@
 		63C018A723A8D4E800A4C027 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				63424DAD23A9084100D112B5 /* Pagination */,
 				63C018A823A8D50000A4C027 /* DateHelper.swift */,
 			);
 			path = Utils;
@@ -384,6 +400,7 @@
 				63C018AB23A8D54A00A4C027 /* Data+DecodeTo.swift */,
 				63C018AC23A8D54A00A4C027 /* Encodable+Dictionary.swift */,
 				63C018AF23A8D54A00A4C027 /* Optional+Required.swift */,
+				63424DB623A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -562,7 +579,7 @@
 			files = (
 				63C018A123A8D22A00A4C027 /* Tattoo.storyboard in Resources */,
 				63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */,
-				63424D8023A8E00C00D112B5 /* TattoListTableViewCell.xib in Resources */,
+				63424D8023A8E00C00D112B5 /* PostListTableViewCell.xib in Resources */,
 				63FDBEF323A8CBB4009956BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,15 +679,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63424D7B23A8DE9A00D112B5 /* TattoListControllerViewModel.swift in Sources */,
 				63C018BD23A8D56000A4C027 /* StoryboardIdentifiable.swift in Sources */,
 				63424D8623A8E55200D112B5 /* PostsEndpoint.swift in Sources */,
-				63424D7F23A8E00C00D112B5 /* TattoListTableViewCell.swift in Sources */,
-				63424D8D23A8E87500D112B5 /* TattooListModel.swift in Sources */,
+				63424D7F23A8E00C00D112B5 /* PostListTableViewCell.swift in Sources */,
+				63424D8D23A8E87500D112B5 /* PostListModel.swift in Sources */,
 				63C0189323A8D09300A4C027 /* HTTPTask.swift in Sources */,
+				63424DB323A90D9400D112B5 /* PostsListControllerViewModel.swift in Sources */,
 				63C0188723A8D09300A4C027 /* ParameterEncoding.swift in Sources */,
+				63424DAC23A907EA00D112B5 /* TTDPostsRemoteAPI.swift in Sources */,
 				63C0189123A8D09300A4C027 /* URLRequestError.swift in Sources */,
 				63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */,
+				63424DB723A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift in Sources */,
 				63C018B423A8D54A00A4C027 /* Optional+Required.swift in Sources */,
 				63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */,
 				63C0189423A8D09300A4C027 /* APIRouter.swift in Sources */,
@@ -678,30 +697,31 @@
 				63C0189623A8D09300A4C027 /* EndPointType.swift in Sources */,
 				63C0186823A8CF4900A4C027 /* WindowRouter.swift in Sources */,
 				63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */,
-				63424D9923A8ED6100D112B5 /* TattoosRepository.swift in Sources */,
+				63424D9923A8ED6100D112B5 /* PostsRepository.swift in Sources */,
 				63C018A923A8D50000A4C027 /* DateHelper.swift in Sources */,
 				63C0189A23A8D0CE00A4C027 /* OSLogs.swift in Sources */,
-				63424DA023A8EE1200D112B5 /* TTDTattoosRepository.swift in Sources */,
-				63424D9623A8EA2E00D112B5 /* TTDTattoosRemoteAPI.swift in Sources */,
 				63C018B023A8D54A00A4C027 /* Data+DecodeTo.swift in Sources */,
 				63C018C223A8D56000A4C027 /* ReuseIdentifying.swift in Sources */,
 				63C0189B23A8D0CE00A4C027 /* NetworkLogger.swift in Sources */,
 				63C018B123A8D54A00A4C027 /* Encodable+Dictionary.swift in Sources */,
 				63C0188923A8D09300A4C027 /* JSONParameterEncoder.swift in Sources */,
-				63424D8F23A8E87E00D112B5 /* TattooDetails.swift in Sources */,
+				63424D8F23A8E87E00D112B5 /* PostDetails.swift in Sources */,
+				63424DA823A9070800D112B5 /* TTDPostsRepository.swift in Sources */,
 				63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */,
 				63C0188623A8D09300A4C027 /* RemoteAPIResponseHandler.swift in Sources */,
-				63424D8323A8E34C00D112B5 /* TattooListCellDisplayModel.swift in Sources */,
+				63424D8323A8E34C00D112B5 /* PostListCellDisplayModel.swift in Sources */,
 				63C0186923A8CF4900A4C027 /* Router.swift in Sources */,
-				63424D7923A8DE0100D112B5 /* TattooListViewController.swift in Sources */,
+				63424D7923A8DE0100D112B5 /* PostsListViewController.swift in Sources */,
 				63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */,
 				63C0188823A8D09300A4C027 /* URLParameterEncoder.swift in Sources */,
 				63C0186C23A8D02700A4C027 /* AppCoordinator.swift in Sources */,
 				63C0189223A8D09300A4C027 /* NetworkRouter.swift in Sources */,
+				63424DA423A906DE00D112B5 /* FakePostsRepository.swift in Sources */,
 				63C0189523A8D09300A4C027 /* HTTPMethod.swift in Sources */,
-				63424D8A23A8E79500D112B5 /* TattoosRemoteAPI.swift in Sources */,
-				63424D9323A8E92300D112B5 /* TattooListPage.swift in Sources */,
-				63424D9C23A8EDFB00D112B5 /* FakeTattoosRepository.swift in Sources */,
+				63424DB523A91E7200D112B5 /* DefaultAPIResponseHandler.swift in Sources */,
+				63424D8A23A8E79500D112B5 /* PostsRemoteAPI.swift in Sources */,
+				63424DAF23A9084D00D112B5 /* PaginationSupportable.swift in Sources */,
+				63424D9323A8E92300D112B5 /* PostsListPage.swift in Sources */,
 				63C018BE23A8D56000A4C027 /* UIScrollView+Extensions.swift in Sources */,
 				63C018A323A8D24100A4C027 /* TattooCoordinator.swift in Sources */,
 			);

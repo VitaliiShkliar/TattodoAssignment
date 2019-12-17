@@ -8,6 +8,12 @@
 
 import Foundation
 
-struct TattooListCellDisplayModel {
+struct PostListCellDisplayModel {
+    let imageURL: URL?
+    let text: String
     
+    init(for post: PostListModel) {
+        imageURL = URL(string: post.image.url)
+        text = post.description
+    }
 }

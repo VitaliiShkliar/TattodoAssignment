@@ -33,6 +33,7 @@
 		63651C7F23AA1E460032EAA5 /* AuthorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63651C7E23AA1E460032EAA5 /* AuthorInfoView.xib */; };
 		63651C8123AA21250032EAA5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C8023AA21250032EAA5 /* UIView+Extensions.swift */; };
 		63651C8323AA23370032EAA5 /* TattooDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C8223AA23370032EAA5 /* TattooDIContainer.swift */; };
+		637BCCF523AA5EB200ECBFF5 /* PostsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BCCF423AA5EB200ECBFF5 /* PostsDataProvider.swift */; };
 		63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */; };
 		63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186023A8CF4900A4C027 /* Presentable.swift */; };
 		63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186123A8CF4900A4C027 /* Coordinator.swift */; };
@@ -113,6 +114,7 @@
 		63651C7E23AA1E460032EAA5 /* AuthorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorInfoView.xib; sourceTree = "<group>"; };
 		63651C8023AA21250032EAA5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		63651C8223AA23370032EAA5 /* TattooDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooDIContainer.swift; sourceTree = "<group>"; };
+		637BCCF423AA5EB200ECBFF5 /* PostsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataProvider.swift; sourceTree = "<group>"; };
 		63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
 		63C0186023A8CF4900A4C027 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		63C0186123A8CF4900A4C027 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				63424DAE23A9084D00D112B5 /* PaginationSupportable.swift */,
+				637BCCF423AA5EB200ECBFF5 /* PostsDataProvider.swift */,
 			);
 			path = Pagination;
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				63651C8323AA23370032EAA5 /* TattooDIContainer.swift in Sources */,
 				63651C7D23AA1E270032EAA5 /* AuthorInfoView.swift in Sources */,
 				63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */,
+				637BCCF523AA5EB200ECBFF5 /* PostsDataProvider.swift in Sources */,
 				63C0189423A8D09300A4C027 /* APIRouter.swift in Sources */,
 				63C0189E23A8D11100A4C027 /* AppDependencyContainer.swift in Sources */,
 				63C0189623A8D09300A4C027 /* EndPointType.swift in Sources */,

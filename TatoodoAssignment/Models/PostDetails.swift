@@ -14,20 +14,24 @@ struct PostDetails: Decodable {
     let counts: PostCounts
     
     static var mock: PostDetails {
-        PostDetails(id: 0, artist: Artist.mock, counts: PostCounts(likes: 1, comments: 0, pins: 0))
+        PostDetails(id: 11, artist: Artist.mock, counts: PostCounts(likes: 1, comments: 0, pins: 0))
     }
+}
+
+struct PostDetailsContainer: Decodable {
+    let data: PostDetails
 }
 
 struct Artist: Decodable {
     let id: Int
     let name: String
-    let userName: String
+    let username: String
     let imageUrl: String
     
     static var mock: Artist {
         Artist(id: 111,
                name: "Test Name",
-               userName: "UserName",
+               username: "User Name",
                imageUrl: "https://tattoodo-mobile-app.imgix.net/images/profile/images/12523663_469364879913334_1062293922_a_Wz9L6nhsN5.jpg")
     }
 }

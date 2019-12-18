@@ -23,6 +23,10 @@ class PostListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupAppearance()
+    }
+    
+    private func setupAppearance() {
         tintColor = .black
         containerView.layer.cornerRadius = 8
         postImageView.layer.cornerRadius = 8
@@ -45,12 +49,12 @@ class PostListTableViewCell: UITableViewCell {
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
-         animate(isTouched: false)
+        animate(isTouched: false)
     }
     
     private func animate(isTouched: Bool) {
-        let transform = isTouched ? CGAffineTransform.init(scaleX: 0.95, y: 0.95) : .identity
-        UIView.animate(withDuration: 0.25) {
+        let transform = isTouched ? CGAffineTransform.init(scaleX: 0.97, y: 0.97) : .identity
+        UIView.animate(withDuration: 0.2) {
             self.containerView.transform = transform
         }
     }

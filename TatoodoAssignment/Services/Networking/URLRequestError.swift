@@ -17,7 +17,6 @@ enum URLRequestError: Error {
 
 extension URLRequestError: LocalizedError {
     var errorDescription: String? {
-        // TODO: - get normal texts
         switch self {
         case .badRequest(let statusCode):
             return "Request failed with statusCode: \(statusCode)"

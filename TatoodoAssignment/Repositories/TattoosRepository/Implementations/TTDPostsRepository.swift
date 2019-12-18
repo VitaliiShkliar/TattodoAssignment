@@ -17,20 +17,27 @@ class TTDPostsRepository: PostsRepository {
     }
     
     func getListOfPosts(page: Int, completion: @escaping (Result<PostsListPage, Error>) -> Void) {
-        remoteAPI.getPostsList(page: page, completion: completion)
+        remoteAPI.getPostsList(page: page, completion: { result in
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        })
     }
     
     func getDatailsForPost(with id: Int, completion: @escaping (Result<PostDetails, Error>) -> Void) {
+        
         if let cachedDetails = detailsCache[id] {
             completion(.success(cachedDetails))
         } else {
             remoteAPI.getDetailsForPost(with: id) { [weak self] result in
-                switch result {
-                case .failure(let error):
-                    completion(.failure(error))
-                case .success(let details):
-                    self?.detailsCache[id] = details
-                    completion(.success(details))
+                DispatchQueue.main.async {
+                    switch result {
+                    case .failure(let error):
+                        completion(.failure(error))
+                    case .success(let details):
+                        self?.detailsCache[id] = details
+                        completion(.success(details))
+                    }
                 }
             }
         }

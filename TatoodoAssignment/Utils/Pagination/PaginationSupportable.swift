@@ -17,7 +17,7 @@ protocol PaginationSupportable {
 }
 
 extension PaginationSupportable {
-    func queryMore(completion: @escaping ([PaginatedItem]) -> Void)  {
+    func queryMore(completion: @escaping ([PaginatedItem]) -> Void) {
         getData(request: request, completion: completion)
     }
 }
@@ -28,26 +28,26 @@ class PostsDataProvider: PaginationSupportable {
     private var loadedPages: [PostsListPage] = []
     var dataSource: [PostListModel] = []
     var currentPage: Int { loadedPages.count }
-    var request: Int { currentPage + 1 } //Next page
+    var request: Int { currentPage + 1 }
+    private var totalPages: Int? { loadedPages.first?.totalPages }
+    var onError: ErrorCompletion?
     
     init(repository: PostsRepository) {
         repo = repository
     }
     
     func getData(request: Int, completion: @escaping ([PostListModel]) -> Void) {
+        if let total = totalPages, currentPage == total { return }
         let old = self.dataSource
         self.repo.getListOfPosts(page: request) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .failure(let error):
-                    print(error)
-                break //TODO: - handle error
-                case .success(let page):
-                    self?.loadedPages.append(page)
-                    let newPosts = page.posts
-                    self?.dataSource = old + newPosts
-                    completion(newPosts)
-                }
+            switch result {
+            case .failure(let error):
+                self?.onError?(error)
+            case .success(let page):
+                self?.loadedPages.append(page)
+                let newPosts = page.posts
+                self?.dataSource = old + newPosts
+                completion(newPosts)
             }
         }
     }

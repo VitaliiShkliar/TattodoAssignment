@@ -20,6 +20,7 @@ class PostsListViewController: UIViewController {
     var viewModel: PostsListControllerViewModeling!
     weak var delegate: PostsListViewControllerDelegate?
     private let cellIdentifier = PostListTableViewCell.reuseIdentifier
+    private var activityIndicator: UIActivityIndicatorView?
     
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -30,7 +31,7 @@ class PostsListViewController: UIViewController {
     }
     
     private func wireViewModel() {
-        viewModel.onSelect = { [weak self] post in
+        viewModel.onPostSelected = { [weak self] post in
             self?.delegate?.didSelect(post: post)
         }
         
@@ -40,15 +41,32 @@ class PostsListViewController: UIViewController {
             self?.tableView.endUpdates()
         }
         
-        viewModel.onLoadingStateChange = { [weak self] bool in
-            print("IsLoading", bool)
-            //TODO: loader
+        viewModel.onLoadingStateChange = { [weak self] isLoading in
+            isLoading ? self?.activityIndicator?.startAnimating() : self?.activityIndicator?.stopAnimating()
+        }
+        
+        viewModel.onErrorMessageReceived = { [weak self] errorMessage in
+            self?.alert(message: errorMessage)
         }
     }
     
     private func setupTableView() {
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         tableView.contentInset.bottom = 100
+        tableView.tableFooterView = getTableFooterView()
+    }
+    
+    private func getTableFooterView() -> UIView {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 100))
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = UIColor.black
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+        NSLayoutConstraint.activate([activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                                     activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
+        self.activityIndicator = activityIndicator
+        return view
     }
 }
 
@@ -66,7 +84,6 @@ extension PostsListViewController: UITableViewDataSource, UITableViewDelegate, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
         viewModel.userDidSelect(row: indexPath.row)
     }
     
@@ -75,7 +92,7 @@ extension PostsListViewController: UITableViewDataSource, UITableViewDelegate, U
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard scrollView.isNearBottomEdge(edgeOffset: tableView.bounds.height / 4) else { return }
+        guard scrollView.contentSize.height > scrollView.frame.size.height, scrollView.isNearBottomEdge(edgeOffset: tableView.bounds.height) else { return }
         viewModel.didScrollToBottom()
     }
 }

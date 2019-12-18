@@ -10,6 +10,7 @@ import UIKit
 
 class TattooCoordinator: Coordinator<DeepLink> {
     private let postsListVCFactory: () -> PostsListViewController
+    private let postDetailsVCFactory: (PostListModel) -> PostDetailsViewController
     
     private lazy var postsListVC: PostsListViewController = {
         let vc = self.postsListVCFactory()
@@ -18,8 +19,10 @@ class TattooCoordinator: Coordinator<DeepLink> {
     }()
     
     init(router: RouterType,
-         postsListVCFactory: @escaping () -> PostsListViewController) {
+         postsListVCFactory: @escaping () -> PostsListViewController,
+         postDetailsVCFactory: @escaping (PostListModel) -> PostDetailsViewController) {
         self.postsListVCFactory = postsListVCFactory
+        self.postDetailsVCFactory = postDetailsVCFactory
         super.init(router: router)
     }
     
@@ -33,7 +36,8 @@ class TattooCoordinator: Coordinator<DeepLink> {
 // MARK: Navigation
 extension TattooCoordinator {
     func goToDetails(ofThe post: PostListModel) {
-        
+        let vc = postDetailsVCFactory(post)
+        router.push(vc, animated: true, completion: nil)
     }
 }
 

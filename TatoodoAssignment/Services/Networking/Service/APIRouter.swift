@@ -58,9 +58,11 @@ class APIRouter<EndPoint: EndPointType>: NetworkRouter {
                         completion(.success(model))
                     } catch {
                         NetworkLogger.log(error: error)
+                        print(error)
                         completion(.failure(error))
                     }
                 case .failure(let error):
+                  
                     NetworkLogger.log(error: error)
                     completion(.failure(error))
                 }

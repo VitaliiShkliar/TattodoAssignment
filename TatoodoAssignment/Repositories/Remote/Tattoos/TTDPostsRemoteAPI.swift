@@ -27,6 +27,13 @@ struct TTDPostsRemoteAPI: PostsRemoteAPI {
     func getDetailsForPost(with id: Int, completion: @escaping (Result<PostDetails, Error>) -> Void) {
         router.request(.getPostDetails(postID: id),
                        responseHandler: responseHandler,
-                       completion: completion)
+                       completion: { (result: Result<PostDetailsContainer, Error>) in
+                        switch result {
+                        case .success(let container):
+                            completion(.success(container.data))
+                        case .failure(let error):
+                            completion(.failure(error))
+                        }
+        })
     }
 }

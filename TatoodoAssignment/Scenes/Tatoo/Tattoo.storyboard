@@ -43,5 +43,74 @@
             </objects>
             <point key="canvasLocation" x="-128" y="147"/>
         </scene>
+        <!--Post Details View Controller-->
+        <scene sceneID="vcv-b5-sOb">
+            <objects>
+                <viewController storyboardIdentifier="PostDetailsViewController" id="bly-OM-joZ" customClass="PostDetailsViewController" customModule="TatoodoAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ej6-yc-fzL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiR-8i-qxx">
+                                <rect key="frame" x="16" y="44" width="382" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-tf-81x">
+                                        <rect key="frame" x="0.0" y="30" width="382" height="578"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="245.5" translatesAutoresizingMaskIntoConstraints="NO" id="TYv-VR-7TB">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="448"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-pz-gUE">
+                                                <rect key="frame" x="0.0" y="448" width="382" height="106"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="36" translatesAutoresizingMaskIntoConstraints="NO" id="92J-5I-0M3" customClass="CountsView" customModule="TatoodoAssignment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="AMS-Qg-hGZ" customClass="AuthorInfoView" customModule="TatoodoAssignment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="36" width="382" height="70"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT6-Qp-s0v">
+                                                <rect key="frame" x="0.0" y="554" width="382" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5pk-tf-81x" firstAttribute="top" secondItem="AiR-8i-qxx" secondAttribute="top" constant="30" id="1SW-W5-leo"/>
+                                    <constraint firstItem="5pk-tf-81x" firstAttribute="leading" secondItem="AiR-8i-qxx" secondAttribute="leading" id="CBP-Ta-Kx7"/>
+                                    <constraint firstAttribute="bottom" secondItem="5pk-tf-81x" secondAttribute="bottom" constant="20" id="FiN-Nb-o2W"/>
+                                    <constraint firstItem="5pk-tf-81x" firstAttribute="width" secondItem="AiR-8i-qxx" secondAttribute="width" id="GLU-jM-pcF"/>
+                                    <constraint firstItem="5pk-tf-81x" firstAttribute="trailing" secondItem="AiR-8i-qxx" secondAttribute="trailing" id="wU3-8p-dCJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AiR-8i-qxx" firstAttribute="top" secondItem="pTj-1M-IjU" secondAttribute="top" id="J0R-Pl-R0v"/>
+                            <constraint firstAttribute="trailing" secondItem="AiR-8i-qxx" secondAttribute="trailing" constant="16" id="PjJ-vU-Me8"/>
+                            <constraint firstItem="TYv-VR-7TB" firstAttribute="height" secondItem="Ej6-yc-fzL" secondAttribute="height" multiplier="0.5" id="XqT-t6-ez9"/>
+                            <constraint firstItem="pTj-1M-IjU" firstAttribute="bottom" secondItem="AiR-8i-qxx" secondAttribute="bottom" id="eK6-5e-M2K"/>
+                            <constraint firstItem="AiR-8i-qxx" firstAttribute="leading" secondItem="Ej6-yc-fzL" secondAttribute="leading" constant="16" id="ykP-bQ-ibG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pTj-1M-IjU"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorView" destination="AMS-Qg-hGZ" id="UnG-zw-4UI"/>
+                        <outlet property="countsView" destination="92J-5I-0M3" id="Xhe-nI-P6k"/>
+                        <outlet property="descriptionLabel" destination="VT6-Qp-s0v" id="WGE-5c-33l"/>
+                        <outlet property="imageView" destination="TYv-VR-7TB" id="HGS-7z-FY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knd-h1-xf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="150"/>
+        </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

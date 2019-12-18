@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6308560223AA2EA40027E41C /* ArtistInfoDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308560123AA2EA40027E41C /* ArtistInfoDisplayModel.swift */; };
 		63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */; };
 		63424D7923A8DE0100D112B5 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7823A8DE0100D112B5 /* PostsListViewController.swift */; };
 		63424D7F23A8E00C00D112B5 /* PostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */; };
@@ -25,6 +26,13 @@
 		63424DB323A90D9400D112B5 /* PostsListControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */; };
 		63424DB523A91E7200D112B5 /* DefaultAPIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB423A91E7200D112B5 /* DefaultAPIResponseHandler.swift */; };
 		63424DB723A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63424DB623A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift */; };
+		63651C7723AA14E40032EAA5 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C7623AA14E40032EAA5 /* UIViewController+Alert.swift */; };
+		63651C7923AA17A60032EAA5 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C7823AA17A60032EAA5 /* PostDetailsViewController.swift */; };
+		63651C7B23AA17C70032EAA5 /* PostDetailsControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C7A23AA17C70032EAA5 /* PostDetailsControllerViewModel.swift */; };
+		63651C7D23AA1E270032EAA5 /* AuthorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C7C23AA1E270032EAA5 /* AuthorInfoView.swift */; };
+		63651C7F23AA1E460032EAA5 /* AuthorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63651C7E23AA1E460032EAA5 /* AuthorInfoView.xib */; };
+		63651C8123AA21250032EAA5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C8023AA21250032EAA5 /* UIView+Extensions.swift */; };
+		63651C8323AA23370032EAA5 /* TattooDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63651C8223AA23370032EAA5 /* TattooDIContainer.swift */; };
 		63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */; };
 		63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186023A8CF4900A4C027 /* Presentable.swift */; };
 		63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0186123A8CF4900A4C027 /* Coordinator.swift */; };
@@ -53,6 +61,8 @@
 		63C018BD23A8D56000A4C027 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */; };
 		63C018BE23A8D56000A4C027 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */; };
 		63C018C223A8D56000A4C027 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */; };
+		63F2750923AA4101006BFC72 /* CountsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F2750823AA4101006BFC72 /* CountsView.xib */; };
+		63F2750B23AA420D006BFC72 /* CountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2750A23AA420D006BFC72 /* CountsView.swift */; };
 		63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBEE923A8CBB2009956BF /* AppDelegate.swift */; };
 		63FDBEF323A8CBB4009956BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF223A8CBB4009956BF /* Assets.xcassets */; };
 		63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */; };
@@ -76,6 +86,7 @@
 		1B18431C4C9E849BF1CC67AF /* Pods-TatoodoAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.debug.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.release.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TatoodoAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308560123AA2EA40027E41C /* ArtistInfoDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoDisplayModel.swift; sourceTree = "<group>"; };
 		63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		63424D7823A8DE0100D112B5 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +105,13 @@
 		63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListControllerViewModel.swift; sourceTree = "<group>"; };
 		63424DB423A91E7200D112B5 /* DefaultAPIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIResponseHandler.swift; sourceTree = "<group>"; };
 		63424DB623A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+DefaultFormatter.swift"; sourceTree = "<group>"; };
+		63651C7623AA14E40032EAA5 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		63651C7823AA17A60032EAA5 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		63651C7A23AA17C70032EAA5 /* PostDetailsControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsControllerViewModel.swift; sourceTree = "<group>"; };
+		63651C7C23AA1E270032EAA5 /* AuthorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorInfoView.swift; sourceTree = "<group>"; };
+		63651C7E23AA1E460032EAA5 /* AuthorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorInfoView.xib; sourceTree = "<group>"; };
+		63651C8023AA21250032EAA5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		63651C8223AA23370032EAA5 /* TattooDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooDIContainer.swift; sourceTree = "<group>"; };
 		63C0185F23A8CF4900A4C027 /* WindowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
 		63C0186023A8CF4900A4C027 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		63C0186123A8CF4900A4C027 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -122,6 +140,8 @@
 		63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
+		63F2750823AA4101006BFC72 /* CountsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountsView.xib; sourceTree = "<group>"; };
+		63F2750A23AA420D006BFC72 /* CountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountsView.swift; sourceTree = "<group>"; };
 		63FDBEE623A8CBB2009956BF /* TatoodoAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TatoodoAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDBEE923A8CBB2009956BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FDBEF223A8CBB4009956BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +179,10 @@
 			children = (
 				63424D7D23A8E00C00D112B5 /* PostListTableViewCell.swift */,
 				63424D7E23A8E00C00D112B5 /* PostListTableViewCell.xib */,
+				63651C7C23AA1E270032EAA5 /* AuthorInfoView.swift */,
+				63651C7E23AA1E460032EAA5 /* AuthorInfoView.xib */,
+				63F2750823AA4101006BFC72 /* CountsView.xib */,
+				63F2750A23AA420D006BFC72 /* CountsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				63424D8223A8E34C00D112B5 /* PostListCellDisplayModel.swift */,
+				6308560123AA2EA40027E41C /* ArtistInfoDisplayModel.swift */,
 			);
 			path = DisplayModels;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				63C0189D23A8D11100A4C027 /* AppDependencyContainer.swift */,
+				63651C8223AA23370032EAA5 /* TattooDIContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -360,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				63424D7823A8DE0100D112B5 /* PostsListViewController.swift */,
+				63651C7823AA17A60032EAA5 /* PostDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -368,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				63424DB223A90D9400D112B5 /* PostsListControllerViewModel.swift */,
+				63651C7A23AA17C70032EAA5 /* PostDetailsControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,8 +405,8 @@
 			children = (
 				63C018A023A8D22A00A4C027 /* Tattoo.storyboard */,
 				63C018A223A8D24100A4C027 /* TattooCoordinator.swift */,
-				63C018A523A8D24900A4C027 /* ViewModels */,
 				63C018A423A8D24400A4C027 /* ViewControllers */,
+				63C018A523A8D24900A4C027 /* ViewModels */,
 				63424D7C23A8DFDE00D112B5 /* Views */,
 				63424D8123A8E33400D112B5 /* DisplayModels */,
 			);
@@ -421,6 +449,8 @@
 				63C018B723A8D56000A4C027 /* StoryboardIdentifiable.swift */,
 				63C018B823A8D56000A4C027 /* UIScrollView+Extensions.swift */,
 				63424D7623A8DD8500D112B5 /* UIStoryboard+Extensions.swift */,
+				63651C7623AA14E40032EAA5 /* UIViewController+Alert.swift */,
+				63651C8023AA21250032EAA5 /* UIView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -577,6 +607,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F2750923AA4101006BFC72 /* CountsView.xib in Resources */,
+				63651C7F23AA1E460032EAA5 /* AuthorInfoView.xib in Resources */,
 				63C018A123A8D22A00A4C027 /* Tattoo.storyboard in Resources */,
 				63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */,
 				63424D8023A8E00C00D112B5 /* PostListTableViewCell.xib in Resources */,
@@ -680,6 +712,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C018BD23A8D56000A4C027 /* StoryboardIdentifiable.swift in Sources */,
+				6308560223AA2EA40027E41C /* ArtistInfoDisplayModel.swift in Sources */,
+				63651C7923AA17A60032EAA5 /* PostDetailsViewController.swift in Sources */,
 				63424D8623A8E55200D112B5 /* PostsEndpoint.swift in Sources */,
 				63424D7F23A8E00C00D112B5 /* PostListTableViewCell.swift in Sources */,
 				63424D8D23A8E87500D112B5 /* PostListModel.swift in Sources */,
@@ -689,14 +723,18 @@
 				63424DAC23A907EA00D112B5 /* TTDPostsRemoteAPI.swift in Sources */,
 				63C0189123A8D09300A4C027 /* URLRequestError.swift in Sources */,
 				63C0186723A8CF4900A4C027 /* Coordinator.swift in Sources */,
+				63F2750B23AA420D006BFC72 /* CountsView.swift in Sources */,
 				63424DB723A92BDF00D112B5 /* DateFormatter+DefaultFormatter.swift in Sources */,
 				63C018B423A8D54A00A4C027 /* Optional+Required.swift in Sources */,
+				63651C8323AA23370032EAA5 /* TattooDIContainer.swift in Sources */,
+				63651C7D23AA1E270032EAA5 /* AuthorInfoView.swift in Sources */,
 				63C0186523A8CF4900A4C027 /* WindowCoordinator.swift in Sources */,
 				63C0189423A8D09300A4C027 /* APIRouter.swift in Sources */,
 				63C0189E23A8D11100A4C027 /* AppDependencyContainer.swift in Sources */,
 				63C0189623A8D09300A4C027 /* EndPointType.swift in Sources */,
 				63C0186823A8CF4900A4C027 /* WindowRouter.swift in Sources */,
 				63424D7723A8DD8500D112B5 /* UIStoryboard+Extensions.swift in Sources */,
+				63651C8123AA21250032EAA5 /* UIView+Extensions.swift in Sources */,
 				63424D9923A8ED6100D112B5 /* PostsRepository.swift in Sources */,
 				63C018A923A8D50000A4C027 /* DateHelper.swift in Sources */,
 				63C0189A23A8D0CE00A4C027 /* OSLogs.swift in Sources */,
@@ -705,6 +743,7 @@
 				63C0189B23A8D0CE00A4C027 /* NetworkLogger.swift in Sources */,
 				63C018B123A8D54A00A4C027 /* Encodable+Dictionary.swift in Sources */,
 				63C0188923A8D09300A4C027 /* JSONParameterEncoder.swift in Sources */,
+				63651C7B23AA17C70032EAA5 /* PostDetailsControllerViewModel.swift in Sources */,
 				63424D8F23A8E87E00D112B5 /* PostDetails.swift in Sources */,
 				63424DA823A9070800D112B5 /* TTDPostsRepository.swift in Sources */,
 				63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */,
@@ -714,6 +753,7 @@
 				63424D7923A8DE0100D112B5 /* PostsListViewController.swift in Sources */,
 				63C0186623A8CF4900A4C027 /* Presentable.swift in Sources */,
 				63C0188823A8D09300A4C027 /* URLParameterEncoder.swift in Sources */,
+				63651C7723AA14E40032EAA5 /* UIViewController+Alert.swift in Sources */,
 				63C0186C23A8D02700A4C027 /* AppCoordinator.swift in Sources */,
 				63C0189223A8D09300A4C027 /* NetworkRouter.swift in Sources */,
 				63424DA423A906DE00D112B5 /* FakePostsRepository.swift in Sources */,

@@ -266,7 +266,7 @@
 		63C0185623A8CE4D00A4C027 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				63C018A623A8D25200A4C027 /* Tatoo */,
+				63C018A623A8D25200A4C027 /* Tattoo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		63C018A623A8D25200A4C027 /* Tatoo */ = {
+		63C018A623A8D25200A4C027 /* Tattoo */ = {
 			isa = PBXGroup;
 			children = (
 				63C018A023A8D22A00A4C027 /* Tattoo.storyboard */,
@@ -417,7 +417,7 @@
 				63424D7C23A8DFDE00D112B5 /* Views */,
 				63424D8123A8E33400D112B5 /* DisplayModels */,
 			);
-			path = Tatoo;
+			path = Tattoo;
 			sourceTree = "<group>";
 		};
 		63C018A723A8D4E800A4C027 /* Utils */ = {

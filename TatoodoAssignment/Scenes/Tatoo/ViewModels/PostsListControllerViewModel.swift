@@ -71,13 +71,13 @@ class PostsListControllerViewModel: PostsListControllerViewModeling {
         dataProvider.queryMore { [weak self] newItems in
             self?.isLoading = false
             guard let self = self else { return }
-            self.onNewItems?(self.indexesToInsert(for: newItems.count))
+            let oldItemsCount = self.numberOfRows - newItems.count
+            self.onNewItems?(self.indexesToInsert(for: newItems.count, oldItemsCount: oldItemsCount))
         }
     }
     
-    private func indexesToInsert(for newItemsCount: Int) -> [IndexPath] {
+    func indexesToInsert(for newItemsCount: Int, oldItemsCount: Int) -> [IndexPath] {
         guard newItemsCount > 0 else { return [] }
-        let oldItemsCount = self.numberOfRows - newItemsCount
-        return (oldItemsCount..<self.numberOfRows).map { IndexPath(row: $0, section: 0) }
+        return (oldItemsCount..<(oldItemsCount + newItemsCount)).map { IndexPath(row: $0, section: 0) }
     }
 }

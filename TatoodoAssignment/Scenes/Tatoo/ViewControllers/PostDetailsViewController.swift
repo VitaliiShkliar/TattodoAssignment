@@ -26,7 +26,6 @@ class PostDetailsViewController: UIViewController {
     
     func wireViewModel() {
         imageView.kf.setImage(with: viewModel.imageURL)
-        
         descriptionLabel.text = viewModel.postDescription
         
         viewModel.onAuthorInfoLoaded = { [weak self] model in
@@ -41,7 +40,7 @@ class PostDetailsViewController: UIViewController {
             self?.countsView.configure(with: counts)
         }
         
-        viewModel.onLoadingStateChange = { [weak self] isLoading in
+        viewModel.onLoadingStateChange = { isLoading in
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         }
     }

@@ -19,7 +19,11 @@ class AppDependencyContainer {
             }
             
             container.register(PostsRepository.self) { resolver -> PostsRepository in
-                TTDPostsRepository(tattoosRemoteAPI: resolver.resolve(PostsRemoteAPI.self).required())
+                #if TEST
+                return FakePostsRepository()
+                #else
+                return TTDPostsRepository(tattoosRemoteAPI: resolver.resolve(PostsRemoteAPI.self).required())
+                #endif
             }.inObjectScope(.weak)
             
             container.register(AppCoordinator.self) { _ -> AppCoordinator in
@@ -36,4 +40,8 @@ class AppDependencyContainer {
     }()
     
     func makeAppCoordinator() -> AppCoordinator { appDIContainer.resolve(AppCoordinator.self).required(error: "Failed to create the AppCoordinator") }
+    
+    func makePostsRepository() -> PostsRepository {
+        appDIContainer.resolve(PostsRepository.self).required()
+    }
 }

@@ -29,7 +29,7 @@ class PostsDataProvider: PaginationSupportable {
     var dataSource: [PostListModel] = []
     var currentPage: Int { loadedPages.count }
     var request: Int { currentPage + 1 }
-    private var totalPages: Int? { loadedPages.first?.totalPages }
+    var totalPages: Int? { loadedPages.first?.totalPages }
     var onError: ErrorCompletion?
     
     init(repository: PostsRepository) {

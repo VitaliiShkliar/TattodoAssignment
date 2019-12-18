@@ -63,10 +63,11 @@
 		63C018C223A8D56000A4C027 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */; };
 		63F2750923AA4101006BFC72 /* CountsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F2750823AA4101006BFC72 /* CountsView.xib */; };
 		63F2750B23AA420D006BFC72 /* CountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2750A23AA420D006BFC72 /* CountsView.swift */; };
+		63F2751023AA4F7E006BFC72 /* TattoodoPostsDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2750F23AA4F7E006BFC72 /* TattoodoPostsDataProviderTests.swift */; };
+		63F2751223AA5701006BFC72 /* TattoodoPostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2751123AA5701006BFC72 /* TattoodoPostListViewModelTests.swift */; };
 		63FDBEEA23A8CBB2009956BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBEE923A8CBB2009956BF /* AppDelegate.swift */; };
 		63FDBEF323A8CBB4009956BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF223A8CBB4009956BF /* Assets.xcassets */; };
 		63FDBEF623A8CBB4009956BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDBEF423A8CBB4009956BF /* LaunchScreen.storyboard */; };
-		63FDBF0123A8CBB4009956BF /* TatoodoAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDBF0023A8CBB4009956BF /* TatoodoAssignmentTests.swift */; };
 		666B943541905FB9264DA427 /* Pods_TatoodoAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A716194623313A59948CA50 /* Pods_TatoodoAssignment.framework */; };
 		A2DA21F5FE1DE28C24141CA3 /* Pods_TatoodoAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEC8BFF89762A58B809C29E /* Pods_TatoodoAssignmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -142,16 +143,19 @@
 		63C018BC23A8D56000A4C027 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		63F2750823AA4101006BFC72 /* CountsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountsView.xib; sourceTree = "<group>"; };
 		63F2750A23AA420D006BFC72 /* CountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountsView.swift; sourceTree = "<group>"; };
+		63F2750F23AA4F7E006BFC72 /* TattoodoPostsDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoodoPostsDataProviderTests.swift; sourceTree = "<group>"; };
+		63F2751123AA5701006BFC72 /* TattoodoPostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattoodoPostListViewModelTests.swift; sourceTree = "<group>"; };
 		63FDBEE623A8CBB2009956BF /* TatoodoAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TatoodoAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDBEE923A8CBB2009956BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FDBEF223A8CBB4009956BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FDBEF523A8CBB4009956BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FDBEF723A8CBB4009956BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FDBEFC23A8CBB4009956BF /* TatoodoAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TatoodoAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63FDBF0023A8CBB4009956BF /* TatoodoAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TatoodoAssignmentTests.swift; sourceTree = "<group>"; };
 		63FDBF0223A8CBB4009956BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B13E6F1B8E91B8321E8C29A /* Pods-TatoodoAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignmentTests/Pods-TatoodoAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		B672AD3F1CB4C4A7428A6F92 /* Pods-TatoodoAssignmentTests.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignmentTests.test.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignmentTests/Pods-TatoodoAssignmentTests.test.xcconfig"; sourceTree = "<group>"; };
 		B684AF843F7D69546667C84F /* Pods-TatoodoAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignmentTests/Pods-TatoodoAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C22CBE0DB7EC3CB78F40B0 /* Pods-TatoodoAssignment.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TatoodoAssignment.test.xcconfig"; path = "Target Support Files/Pods-TatoodoAssignment/Pods-TatoodoAssignment.test.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,7 +500,8 @@
 		63FDBEFF23A8CBB4009956BF /* TatoodoAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				63FDBF0023A8CBB4009956BF /* TatoodoAssignmentTests.swift */,
+				63F2750F23AA4F7E006BFC72 /* TattoodoPostsDataProviderTests.swift */,
+				63F2751123AA5701006BFC72 /* TattoodoPostListViewModelTests.swift */,
 				63FDBF0223A8CBB4009956BF /* Info.plist */,
 			);
 			path = TatoodoAssignmentTests;
@@ -509,6 +514,8 @@
 				469316D29B20FFFC3D93168F /* Pods-TatoodoAssignment.release.xcconfig */,
 				B684AF843F7D69546667C84F /* Pods-TatoodoAssignmentTests.debug.xcconfig */,
 				7B13E6F1B8E91B8321E8C29A /* Pods-TatoodoAssignmentTests.release.xcconfig */,
+				E5C22CBE0DB7EC3CB78F40B0 /* Pods-TatoodoAssignment.test.xcconfig */,
+				B672AD3F1CB4C4A7428A6F92 /* Pods-TatoodoAssignmentTests.test.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -771,7 +778,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FDBF0123A8CBB4009956BF /* TatoodoAssignmentTests.swift in Sources */,
+				63F2751223AA5701006BFC72 /* TattoodoPostListViewModelTests.swift in Sources */,
+				63F2751023AA4F7E006BFC72 /* TattoodoPostsDataProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +805,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		63F2750C23AA4DDC006BFC72 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D TEST";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		63F2750D23AA4DDC006BFC72 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C22CBE0DB7EC3CB78F40B0 /* Pods-TatoodoAssignment.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU9B24YLDN;
+				INFOPLIST_FILE = TatoodoAssignment/Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.TatoodoAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Test;
+		};
+		63F2750E23AA4DDC006BFC72 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B672AD3F1CB4C4A7428A6F92 /* Pods-TatoodoAssignmentTests.test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DU9B24YLDN;
+				INFOPLIST_FILE = TatoodoAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axondevgroup.RXMVVMC.TatoodoAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TatoodoAssignment.app/TatoodoAssignment";
+			};
+			name = Test;
+		};
 		63FDBF0323A8CBB4009956BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -851,6 +963,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1004,6 +1117,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63FDBF0323A8CBB4009956BF /* Debug */,
+				63F2750C23AA4DDC006BFC72 /* Test */,
 				63FDBF0423A8CBB4009956BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1013,6 +1127,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63FDBF0623A8CBB4009956BF /* Debug */,
+				63F2750D23AA4DDC006BFC72 /* Test */,
 				63FDBF0723A8CBB4009956BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1022,6 +1137,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63FDBF0923A8CBB4009956BF /* Debug */,
+				63F2750E23AA4DDC006BFC72 /* Test */,
 				63FDBF0A23A8CBB4009956BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

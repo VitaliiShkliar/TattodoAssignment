@@ -10,12 +10,17 @@ import Foundation
 
 class FakePostsRepository: PostsRepository {
     func getListOfPosts(page: Int, completion: @escaping (Result<PostsListPage, Error>) -> Void) {
+        // 0 - FOR TESTING ERROR CASE
+        guard page != 0 else {
+            completion(.failure(URLRequestError.badRequest(statusCode: 400)))
+            return
+        }
         completion(.success(PostsListPage(posts: Array(repeating: PostListModel.mock,
                                                          count: 10),
-                                           total: 2,
-                                           count: 2,
+                                           total: 10 * 10,
+                                           count: 10,
                                            currentPage: page,
-                                           totalPages: 1000)))
+                                           totalPages: 10)))
     }
     
     func getDatailsForPost(with id: Int, completion: @escaping (Result<PostDetails, Error>) -> Void) {

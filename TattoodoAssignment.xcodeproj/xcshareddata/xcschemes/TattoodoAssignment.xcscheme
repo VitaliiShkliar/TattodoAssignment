@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63FDBEE523A8CBB2009956BF"
-               BuildableName = "TatoodoAssignment.app"
-               BlueprintName = "TatoodoAssignment"
-               ReferencedContainer = "container:TatoodoAssignment.xcodeproj">
+               BuildableName = "TattoodoAssignment.app"
+               BlueprintName = "TattoodoAssignment"
+               ReferencedContainer = "container:TattoodoAssignment.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63FDBEFB23A8CBB4009956BF"
-               BuildableName = "TatoodoAssignmentTests.xctest"
-               BlueprintName = "TatoodoAssignmentTests"
-               ReferencedContainer = "container:TatoodoAssignment.xcodeproj">
+               BuildableName = "TattoodoAssignmentTests.xctest"
+               BlueprintName = "TattoodoAssignmentTests"
+               ReferencedContainer = "container:TattoodoAssignment.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63FDBEE523A8CBB2009956BF"
-            BuildableName = "TatoodoAssignment.app"
-            BlueprintName = "TatoodoAssignment"
-            ReferencedContainer = "container:TatoodoAssignment.xcodeproj">
+            BuildableName = "TattoodoAssignment.app"
+            BlueprintName = "TattoodoAssignment"
+            ReferencedContainer = "container:TattoodoAssignment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63FDBEE523A8CBB2009956BF"
-            BuildableName = "TatoodoAssignment.app"
-            BlueprintName = "TatoodoAssignment"
-            ReferencedContainer = "container:TatoodoAssignment.xcodeproj">
+            BuildableName = "TattoodoAssignment.app"
+            BlueprintName = "TattoodoAssignment"
+            ReferencedContainer = "container:TattoodoAssignment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

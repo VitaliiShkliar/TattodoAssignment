@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TatoodoAssignment
+@testable import TattoodoAssignment
 
 class TattoodoPostListViewModelTests: XCTestCase {
     var viewModel: PostsListControllerViewModel!
